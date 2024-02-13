@@ -20,7 +20,6 @@ struct TopOffers: View {
                             .resizable()
                             .frame(height: 120)
                             .clipShape(.rect(cornerRadius: 15))
-                            .shadow(radius: 3)
                         Text(name)
                             .font(.subheadline)
                             .fontWeight(.bold)

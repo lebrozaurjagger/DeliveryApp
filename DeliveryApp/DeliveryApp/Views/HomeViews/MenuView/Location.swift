@@ -23,7 +23,7 @@ struct Location: View {
                 Text("Current location")
                     .font(.subheadline)
                     .foregroundColor(Color(.systemGray))
-                Text("Washington Blvd, 1560")
+                Text("3622 Powelton Ave")
                     .fontWeight(.bold)
             }
             .padding(8)

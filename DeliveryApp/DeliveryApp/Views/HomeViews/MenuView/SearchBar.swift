@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SearchBar: View {
+    @State private var searchBar = ""
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -19,7 +21,7 @@ struct SearchBar: View {
                 Image(systemName: "magnifyingglass")
                     .fontWeight(.bold)
                     .foregroundColor(Color(.systemGray2))
-                Text("Search menu, restraunts, or etc")
+                TextField("Search menu, restraunts, or etc", text: $searchBar)
                     .font(.subheadline)
                     .foregroundColor(Color(.systemGray))
                 Spacer()
@@ -29,6 +31,7 @@ struct SearchBar: View {
             }
             .padding()
         }
+        .padding(1)
     }
 }
 
