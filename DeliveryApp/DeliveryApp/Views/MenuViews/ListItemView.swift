@@ -29,6 +29,15 @@ struct ListItemView: View {
                     .lineLimit(1)
                     .font(.subheadline)
                     .foregroundColor(Color(.systemGray))
+                HStack {
+                    Image(systemName: "star.fill")
+                        .font(.subheadline)
+                        .foregroundColor(Color(.systemYellow))
+                        .fontWeight(.bold)
+                    Text("4.8")
+                        .font(.subheadline)
+                        .foregroundColor(Color(.systemGray))
+                }
             }
         }
     }

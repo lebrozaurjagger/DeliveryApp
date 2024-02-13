@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct MenuView: View {
-    @State private var showSheet = false
-    
     var body: some View {
         NavigationView {
             List {
@@ -23,18 +21,12 @@ struct MenuView: View {
                         SearchBar()
                             .padding(.vertical)
                         
-                        HStack {
-                            NavigationLink(destination: RestrauntView(restraunt: "Reed St.", restrauntImage: "Starbucks", description: "Description")) {
-                                TopOffers(image: "Starbucks", name: "Reed St.", destination: "1.2 km", rate: "4.8")
-                                .foregroundColor(Color(.black))
-                                .padding(.trailing, 4)
-                            }
-                            NavigationLink(destination: RestrauntView(restraunt: "Greenwich St.", restrauntImage: "Baegopa", description: "Description")) {
-                                TopOffers(image: "Baegopa", name: "Greenwich St.", destination: "500 m", rate: "4.6")
-                                .foregroundColor(Color(.black))
-                                .padding(.leading, 4)
-                            }
-                        }
+                        Image("Starbucks")
+                            .resizable()
+                            .frame(height: 150)
+                            .clipShape(.rect(cornerRadius: 15))
+                            .foregroundColor(Color(.black))
+                            .padding(.trailing, 4)
                         
                         VStack(alignment: .leading) {
                             HStack {
