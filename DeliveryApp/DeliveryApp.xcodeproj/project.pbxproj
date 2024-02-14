@@ -20,6 +20,7 @@
 		648D3F3A2B7AF0A8000A0892 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D3F392B7AF0A8000A0892 /* CurrentLocationView.swift */; };
 		648D3F3E2B7AF1FF000A0892 /* RestrauntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D3F3D2B7AF1FF000A0892 /* RestrauntView.swift */; };
 		648D3F412B7C0394000A0892 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D3F402B7C0394000A0892 /* OrderView.swift */; };
+		648D3F442B7CE99B000A0892 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D3F432B7CE99B000A0892 /* CartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		648D3F392B7AF0A8000A0892 /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
 		648D3F3D2B7AF1FF000A0892 /* RestrauntView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrauntView.swift; sourceTree = "<group>"; };
 		648D3F402B7C0394000A0892 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		648D3F432B7CE99B000A0892 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,6 @@
 				648D3F352B7AE681000A0892 /* ItemView.swift */,
 				648D3F392B7AF0A8000A0892 /* CurrentLocationView.swift */,
 				648D3F3D2B7AF1FF000A0892 /* RestrauntView.swift */,
-				648D3F372B7AE870000A0892 /* ListItemView.swift */,
 			);
 			path = MenuViews;
 			sourceTree = "<group>";
@@ -130,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				648D3F402B7C0394000A0892 /* OrderView.swift */,
+				648D3F432B7CE99B000A0892 /* CartView.swift */,
+				648D3F372B7AE870000A0892 /* ListItemView.swift */,
 			);
 			path = OrderViews;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				648D3F332B7ADA0C000A0892 /* Categories.swift in Sources */,
 				648D3F282B7AD7A7000A0892 /* MenuView.swift in Sources */,
 				648D3F362B7AE681000A0892 /* ItemView.swift in Sources */,
+				648D3F442B7CE99B000A0892 /* CartView.swift in Sources */,
 				648D3F3E2B7AF1FF000A0892 /* RestrauntView.swift in Sources */,
 				648D3F2C2B7AD9DE000A0892 /* Location.swift in Sources */,
 				648D3F172B7ACFDE000A0892 /* DeliveryAppApp.swift in Sources */,
