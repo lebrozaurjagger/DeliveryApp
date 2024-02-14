@@ -8,29 +8,32 @@
 import SwiftUI
 
 struct OrderView: View {
+    @State private var showSheet = false
+    
     var body: some View {
-        TabView{
-            NavigationView {
-                VStack {
-                    List {
-                        ForEach(1...5, id: \.self) { i in
-                            ListItemView(image: "Pattern", name: "Cheeze Pizza", calories: "128 kcal")
-                        }
+        NavigationView {
+            List {
+                ForEach(1...10, id: \.self) { i in
+                    NavigationLink(destination: ItemView()) {
+                        ListItemView(image: "Pattern", name: "Cheeze Pizza", calories: "128 kcal")
                     }
-                    .listStyle(.plain)
-                    
-                    
+                }
+                .navigationTitle("Menu")
+                .sheet(isPresented: $showSheet) {
+                    CartView()
+                }
+            }
+            .listStyle(.plain)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         withAnimation {
-                            
+                            showSheet.toggle()
                         }
                     } label: {
-                        Label("Proceed delivery", systemImage: "")
-                            .fontWeight(.bold)
+                        Label("Cart", systemImage: "cart.fill")
                     }
-                    .padding()
                 }
-                .navigationTitle("Delivery")
             }
         }
     }
