@@ -8,10 +8,40 @@
 import SwiftUI
 
 struct RestrauntsView: View {
+    @State var image = "image"
+    @State var name = "TempName"
+    @State var destination = "1.0 km"
+    @State var rate = "5.0"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                Image(image)
+                    .resizable()
+                    .frame(height: 120)
+                    .clipShape(.rect(cornerRadius: 15))
+                    .shadow(radius: 3)
+                Text(name)
+                    .font(.subheadline)
+                    .fontWeight(.bold)
+                HStack {
+                    Text(destination)
+                        .font(.subheadline)
+                        .foregroundColor(Color(.systemGray))
+                    Spacer()
+                    Image(systemName: "star.fill")
+                        .font(.subheadline)
+                        .foregroundColor(Color(.systemYellow))
+                        .fontWeight(.bold)
+                    Text(rate)
+                        .font(.subheadline)
+                        .foregroundColor(Color(.systemGray))
+                }
+            }
+        }
     }
 }
+
 
 #Preview {
     RestrauntsView()

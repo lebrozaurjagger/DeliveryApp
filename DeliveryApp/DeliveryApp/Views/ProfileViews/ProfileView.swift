@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @State private var showSheet = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                User()
+                    .padding()
+                
+                List {
+                    ForEach(1...2, id: \.self) { i in
+                        Text("4209 **** **** ****")
+                    }
+                    .sheet(isPresented: $showSheet) {
+                        NewCardView()
+                    }
+                    
+                    Button {
+                        withAnimation {
+                            showSheet.toggle()
+                        }
+                    } label: {
+                        Label("Add new bank card", systemImage: "creditcard.fill")
+                            .fontWeight(.bold)
+                            .padding(.vertical)
+                    }
+                }
+            }
+        }
     }
 }
 

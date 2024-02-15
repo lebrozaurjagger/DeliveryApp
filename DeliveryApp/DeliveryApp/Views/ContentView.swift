@@ -18,7 +18,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Order", systemImage: "list.bullet.clipboard")
                 }
-            OrderView()
+            ProfileView()
                 .tabItem {
                     Label("Profile", systemImage: "person")
                 }
@@ -29,3 +29,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+

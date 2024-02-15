@@ -13,9 +13,8 @@ struct Location: View {
             ZStack {
                 Image(systemName: "person.fill")
                     .foregroundColor(Color(.systemGray2))
-                Rectangle()
-                    .frame(width: 50, height: 50)
-                    .cornerRadius(8)
+                Circle()
+                    .frame(width: 50)
                     .foregroundColor(Color(.systemFill))
                     .shadow(radius: 10)
             }
