@@ -59,6 +59,19 @@ struct MenuView: View {
                     .foregroundColor(Color(.black))
                     .padding(.bottom)
                 }
+                
+                HStack {
+                    NavigationLink(destination: CurrentLocationView()) {
+                        RestrauntsView(image: "Starbucks", name: "Starbucks", destination: "1.2 km", rate: "4.8")
+                    }
+                        .padding(.trailing, 6)
+                        .foregroundColor(.black)
+                    NavigationLink(destination: CurrentLocationView()) {
+                        RestrauntsView(image: "Starbucks", name: "Starbucks", destination: "1.2 km", rate: "4.8")
+                    }
+                        .padding(.leading, 6)
+                        .foregroundColor(.black)
+                }
             }
             .padding()
         }
