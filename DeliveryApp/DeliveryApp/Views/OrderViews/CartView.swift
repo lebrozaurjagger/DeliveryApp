@@ -34,7 +34,9 @@ struct CartView: View {
                             }
                             .confirmationDialog("Clear your cart?", isPresented: $confirmButton, titleVisibility: .visible) {
                                 Button("Clear") {
-                                    //                                Code for clear cart
+                                    
+//                                Code for clear cart
+                                    
                                 }
                             }
                         }
@@ -51,7 +53,7 @@ struct CartView: View {
                 }
                 VStack {
                     Spacer()
-                    NavigationLink(destination: DeliveryView()) {
+                    NavigationLink(destination: OrderStatus(image: "checkmark", status: "Delivery Success!", description: "Your order will be delivered in 30 minutes!")) {
                         Label("Proceed delivery, 000.00", systemImage: "chevron.right")
                             .foregroundColor(.white)
                             .padding()
