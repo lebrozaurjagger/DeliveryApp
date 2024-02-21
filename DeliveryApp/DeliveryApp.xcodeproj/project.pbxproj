@@ -27,7 +27,6 @@
 		648D3F522B7D092D000A0892 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D3F512B7D092D000A0892 /* User.swift */; };
 		648D3F562B7D108E000A0892 /* NewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D3F552B7D108E000A0892 /* NewCardView.swift */; };
 		64D1ED7B2B824459008EC260 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1ED7A2B824459008EC260 /* OrderStatus.swift */; };
-		64D1ED7D2B825656008EC260 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1ED7C2B825656008EC260 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +51,6 @@
 		648D3F512B7D092D000A0892 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		648D3F552B7D108E000A0892 /* NewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardView.swift; sourceTree = "<group>"; };
 		64D1ED7A2B824459008EC260 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
-		64D1ED7C2B825656008EC260 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = DeliveryApp/Views/OrderViews/UserModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				648D3F162B7ACFDE000A0892 /* DeliveryAppApp.swift */,
-				648D3F252B7AD292000A0892 /* Models */,
 				648D3F242B7AD28D000A0892 /* Views */,
 				648D3F1A2B7ACFE0000A0892 /* Assets.xcassets */,
 				648D3F1C2B7ACFE0000A0892 /* Preview Content */,
@@ -111,14 +108,6 @@
 				648D3F4D2B7D0720000A0892 /* ProfileViews */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		648D3F252B7AD292000A0892 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				64D1ED7C2B825656008EC260 /* UserModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		648D3F262B7AD739000A0892 /* MenuViews */ = {
@@ -262,7 +251,6 @@
 				648D3F172B7ACFDE000A0892 /* DeliveryAppApp.swift in Sources */,
 				648D3F2F2B7AD9F2000A0892 /* SearchBar.swift in Sources */,
 				648D3F3A2B7AF0A8000A0892 /* CurrentLocationView.swift in Sources */,
-				64D1ED7D2B825656008EC260 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
